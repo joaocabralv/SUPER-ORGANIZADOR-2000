@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <title>SUPER ORGANIZADOR 2000</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="menu">
+                <nav>
+                    <a href="/principal" id="afazeres-menu"><strong>AQUI!</strong></a>
+                    <a href="/sobre" id="sobre-menu"><strong>SOBRE</strong></a>
+                </nav>
+            </div>
+            <div class="break-header">
+                <p>A Melhor Forma de Organizar a Sua Vida!</p>
+            </div>
+            {% block page_title %}
+
+            <div class="page-title">
+                <h1>SUPER ORGANIZADOR 2000</h1>
+                <button id="button-new" type="button" class="button-new">ADICIONAR TAREFA</button>
+            </div>
+
+            {% endblock %}
+        </header>
+
+        <main class="main">
+            {% block content %}
+
+            <div class="check-flex" id="check-flex">
+                <script src="/static/js/new.js" defer></script>
+            </div>
+
+            {% endblock %}
+        </main>
+
+        <footer class="footer">
+            <div>
+                <p>COPYRIGHT &copy; TODOS OS DIREITOS RESERVADOS - @JoaoCabralV</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
