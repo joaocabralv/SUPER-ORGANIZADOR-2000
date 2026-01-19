@@ -17,4 +17,5 @@ cd super-organizador-2000
 python3 -m venv .venv
 source .venv/bin/activate
 pip install flask
+python3 init_db.py
 flask --app main run --debug
