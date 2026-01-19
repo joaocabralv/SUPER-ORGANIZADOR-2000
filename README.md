@@ -15,9 +15,8 @@ Próximas atualizações:<br>
 
 ```bash
 git clone https://github.com/joaocabralv/super-organizador-2000
-cd superorganizador2000
-python -m venv venv
-source venv/bin/activate
-pip install flask werkzeug
-export SECRET_KEY="dev"
-python app.py
+cd super-organizador-2000
+python -m venv .venv
+source .venv/bin/activate
+pip install flask
+flask --app main run
