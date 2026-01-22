@@ -8,6 +8,7 @@ Próximas atualizações:<br>
 - Acessar notas salvas<br>
 - Editar nome de perfil, email ou senha<br>
 - Homepage interessante<br>
+- Deploy<br>
 
 ## Como rodar o projeto
 
